@@ -1,0 +1,115 @@
+
+# === Virtual environments ===
+# Ignore common virtualenv folder names at repo root or anywhere
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# === Python bytecode & caches ===
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+
+# === Packaging / build ===
+.Python
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+wheels/
+*.egg
+.installed.cfg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Testing / coverage / reports ===
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+htmlcov/
+coverage.xml
+nosetests.xml
+.hypothesis/
+
+# === Notebook ===
+.ipynb_checkpoints/
+
+# === Logs / temp ===
+*.log
+temp/
+cache/
+
+# === Environment files / secrets ===
+.env
+
+# === Editor / IDE files ===
+.vscode/
+.idea/
+*.iml
+**/.idea
+**/.vscode
+
+# === OS files (macOS) ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+*.icloud
+
+# === C extensions / compiled artifacts ===
+# Ignore compiled shared objects by default — remove if you intentionally track them
+*.so
+*.dll
+*.dylib
+
+# === PyInstaller / packaging artifacts ===
+*.manifest
+*.spec
+
+# === Database / local files ===
+db.sqlite3
+db.sqlite3-journal
+
+# === Documentation builds ===
+docs/_build/
+site/
+
+# === Dependency manager caches / lock files ===
+# Keep lock files if you use poetry/pipenv/pdm/poetry lock for reproducibility
+# e.g. keep poetry.lock; ignore other caches
+.pdm.toml
+__pypackages__/
+.pybuilder/
+.mypy_cache/
+.dmypy.json
+.dmypy/
+
+# === Misc / temporary files ===
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
+tags
+
+# === Binary / media files (project-specific) ===
+# Prevent committing large media by default; remove if you actually want to track them
+*.mov
+*.avi
+*.mp4
+*.mpeg
+*.csv
+
+# === Common IDE / tooling residue ===
+.spyderproject
+.spyproject
+.ropeproject
+
+# End of file
