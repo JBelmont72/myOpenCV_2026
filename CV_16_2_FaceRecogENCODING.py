@@ -33,11 +33,11 @@ print(np.__version__)
 import face_recognition as FR
 print(f"Face Recogniton Version: {FR.__version__}")
 font = cv2.FONT_HERSHEY_SIMPLEX
-donFace = FR.load_image_file('/Users/judsonbelmont/Documents/Projects/OpenCV_1/demoImages/known/Donald Trump.jpg')
+donFace = FR.load_image_file('/Users/judsonbelmont/Documents/Github_2026/myOpenCV_2026/demoImages/known/Donald Trump.jpg')
 faceLoc =FR.face_locations(donFace)[0]  #the zero is so we detect the first face
 #HERE start encoding the face by the next line of code
 donFaceEncode = FR.face_encodings(donFace)[0]
-nancyFace = FR.load_image_file('/Users/judsonbelmont/Documents/Projects/OpenCV_1/demoImages/known/Nancy Pelosi.jpg')
+nancyFace = FR.load_image_file('/Users/judsonbelmont/Documents/Github_2026/myOpenCV_2026/demoImages/known/Nancy Pelosi.jpg')
 faceLoc =FR.face_locations(nancyFace)[0]  #the zero is so we detect the first face
 #HERE start encoding the face
 nancyFaceEncode = FR.face_encodings(nancyFace)[0]
@@ -46,7 +46,7 @@ knownEncodings = [donFaceEncode,nancyFaceEncode]
 names= ['Donald Trump','Nancy Pelosi']
 
 #   add unknown photo of unknown faces if any
-unknownFace =FR.load_image_file('/Users/judsonbelmont/Documents/Projects/OpenCV_1/demoImages/unknown/u3.jpg')
+unknownFace =FR.load_image_file('/Users/judsonbelmont/Documents/Github_2026/myOpenCV_2026/demoImages/unknown/uJB_Karl_Doug-2.jpg')
 unknownFaceBGR = cv2.cvtColor(unknownFace,cv2.COLOR_RGB2BGR)
 # next step is to see if we can recognize the persons in the photo, an array of arrays with each array being a face location
 # looks at the unknownFace and finds all the locations. will encode every face
